@@ -1,0 +1,8 @@
+1.生成公钥私钥
+ssh-keygen -i rsa#一直回车即可
+2.拷贝id_rsa.pub到authorized_ids，本机免密登录
+cd /root/.ssh
+cp id_rsa.pub authorized_ids
+3.每台虚拟机重复步骤1、2
+4.copy公钥到需要免密登录的机器
+ssh-copy-id -i hostname
