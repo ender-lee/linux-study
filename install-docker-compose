@@ -1,0 +1,10 @@
+1.Run this command to download the current stable release of Docker Compose:(下载compse文件到/usr/local/bin/docker-compose)
+curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+2.Apply executable permissions to the binary:（授权可执行）
+ chmod +x /usr/local/bin/docker-compose
+ 
+ 
+Note: If the command docker-compose fails after installation, check your path. 
+You can also create a symbolic link to /usr/bin or any other directory in your path.（如果docker-compose不可正常执行，添加软连接，如果可正常执行，可不添加）
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
