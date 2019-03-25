@@ -24,4 +24,4 @@ yum list docker-ce --showduplicates | sort -r
 
 二、自动脚本安装
 curl -fsSL get.docker.com -o get-docker.sh  #下载自动安装脚本
-sh get-docker.sh --mimmor Aliyun  #设置阿里云镜像仓库
+sh get-docker.sh --mirror Aliyun  #设置阿里云镜像仓库
