@@ -2,7 +2,7 @@
 1.下载virtual box 5.2.26
 2.下载centos7镜像
 3.安装虚拟机
-4.配置网络
+4.配置网络（我配置的是桥接网络）
 a）vi /etc/sysconfig/network-scripts/ifcfg-xxx
 TYPE=Ethernet
 BOOTPROTO=dhcp
