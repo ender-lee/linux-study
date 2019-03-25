@@ -25,3 +25,13 @@ yum list docker-ce --showduplicates | sort -r
 二、自动脚本安装
 curl -fsSL get.docker.com -o get-docker.sh  #下载自动安装脚本
 sh get-docker.sh --mirror Aliyun  #设置阿里云镜像仓库
+
+三、配置阿里镜像加速器
+1、登录阿里云官网
+2、产品-->运维-->容器管理服务-->管理中心-->镜像加速器（获取加速器地址）
+3、创建/etc/docker/daemon.json文件
+4、在daemon.json文件添加如下内容
+{
+  "registry-mirrors": ["https://3nyeiuw7.mirror.aliyuncs.com"]
+}
+5、重启docker、让镜像加速器生效
