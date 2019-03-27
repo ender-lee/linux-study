@@ -10,4 +10,4 @@ You can also create a symbolic link to /usr/bin or any other directory in your p
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 
 参考文档：https://docs.docker.com/compose/install/
-
+注：如果curl下载不下来，到https://github.com/docker/compose/releases网站找到对应的版本下载
