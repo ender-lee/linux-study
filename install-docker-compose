@@ -8,3 +8,6 @@ curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compo
 Note: If the command docker-compose fails after installation, check your path. 
 You can also create a symbolic link to /usr/bin or any other directory in your path.（如果docker-compose不可正常执行，添加软连接，如果可正常执行，可不添加）
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+
+参考文档：https://docs.docker.com/compose/install/
+
